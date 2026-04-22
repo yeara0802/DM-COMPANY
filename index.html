@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DM COMPANY</title>
+  <meta name="description" content="DM COMPANY는 교육, 콘텐츠, 비즈니스를 넘나들며 새로운 가능성을 실험하는 회사입니다." />
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #000;
+      color: #fff;
+      line-height: 1.7;
+    }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(1100px, calc(100% - 40px)); margin: 0 auto; }
+    .header {
+      position: sticky; top: 0; z-index: 1000;
+      background: rgba(0,0,0,0.92); backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .header-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 16px 0;
+    }
+    .brand { display: flex; align-items: center; gap: 12px; }
+    .brand img { height: 40px; width: auto; }
+    .brand-name { font-size: 14px; letter-spacing: 0.2em; }
+    .nav { display: none; gap: 24px; font-size: 14px; color: rgba(255,255,255,0.72); }
+    .nav a:hover { color: #fff; }
+    section { padding: 88px 0; }
+    .hero p.label,
+    .section-label { font-size: 12px; letter-spacing: 0.35em; opacity: 0.5; }
+    h1 {
+      margin: 16px 0 0;
+      font-size: clamp(40px, 7vw, 64px);
+      line-height: 1.2;
+    }
+    h2 {
+      margin: 12px 0 0;
+      font-size: clamp(32px, 5vw, 46px);
+      line-height: 1.25;
+    }
+    .hero-desc, .sub-desc { max-width: 720px; color: rgba(255,255,255,0.72); }
+    .hero-desc { margin-top: 24px; }
+    .light {
+      background: #fff;
+      color: #000;
+    }
+    .light .section-label { color: rgba(0,0,0,0.5); opacity: 1; }
+    .light p { color: rgba(0,0,0,0.72); }
+    .two-col { display: grid; gap: 40px; }
+    .cards { display: grid; gap: 24px; margin-top: 40px; }
+    .card {
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 20px;
+      padding: 24px;
+    }
+    .card-no { font-size: 12px; letter-spacing: 0.3em; color: rgba(255,255,255,0.4); }
+    .card h3 { margin: 14px 0 0; font-size: 24px; }
+    .card p { margin: 14px 0 0; color: rgba(255,255,255,0.72); }
+    .leaders { display: grid; gap: 24px; margin-top: 40px; }
+    .leader {
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 20px;
+      padding: 24px;
+    }
+    .leader p:first-child { margin: 0; color: rgba(255,255,255,0.4); font-size: 12px; }
+    .leader h3 { margin: 14px 0 0; font-size: 30px; }
+    .leader p:last-child { margin-top: 14px; color: rgba(255,255,255,0.72); }
+    .split-top {
+      margin-top: 24px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(0,0,0,0.1);
+    }
+    footer {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding: 40px 0;
+      text-align: center;
+      color: rgba(255,255,255,0.5);
+    }
+    @media (min-width: 768px) {
+      .nav { display: flex; }
+      .two-col { grid-template-columns: 1fr 1fr; }
+      .cards, .leaders { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="dm_logo.jpg" alt="DM COMPANY logo" />
+        <div class="brand-name">DM COMPANY</div>
+      </div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#story">Story</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <p class="label">Digital Company</p>
+        <h1>하나의 정답을 따르지 않는<br>새로운 방식을 만드는 회사</h1>
+        <p class="hero-desc">
+          DM COMPANY는 교육, 콘텐츠, 비즈니스를 넘나들며 새로운 가능성을 실험합니다.
+          빠르게 배우고, 바로 실행하며, 결과로 증명합니다.
+        </p>
+      </div>
+    </section>
+
+    <section id="about" class="light">
+      <div class="container two-col">
+        <div>
+          <p class="section-label">ABOUT</p>
+          <h2>새로운 방식을<br>실행으로 증명하는 팀</h2>
+        </div>
+        <div>
+          <p>
+            DM COMPANY는 하나의 분야에 머무르지 않습니다. 교육하고, 만들고, 브랜딩하고,
+            실행하며 새로운 기회를 설계합니다.
+          </p>
+          <p>
+            필요한 것을 빠르게 배우고 스스로 만들며, 그 경험을 콘텐츠와 비즈니스로 연결합니다.
+          </p>
+          <p>
+            단순히 트렌드를 따라가기보다 새로운 시도를 통해 사람과 기회를 연결하는 것이 우리의 일입니다.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <p class="section-label">SERVICES</p>
+        <h2>우리가 하는 일</h2>
+        <p class="sub-desc">이론보다 실행, 설명보다 결과. DM COMPANY는 디지털 실무를 현실과 연결합니다.</p>
+        <div class="cards">
+          <div class="card">
+            <div class="card-no">01</div>
+            <h3>실무 중심 디지털 교육</h3>
+            <p>AI 활용 교육, SNS 마케팅, 엑셀·스마트워크 등 현장에서 바로 적용 가능한 실전형 커리큘럼을 제공합니다.</p>
+          </div>
+          <div class="card">
+            <div class="card-no">02</div>
+            <h3>브랜딩 콘텐츠 생산</h3>
+            <p>예아라 브랜딩을 기반으로 경험, 실패, 성장의 흐름을 스토리형 콘텐츠로 확장합니다.</p>
+          </div>
+          <div class="card">
+            <div class="card-no">03</div>
+            <h3>직접 실행하는 비즈니스</h3>
+            <p>의류 쇼핑몰, 라이브커머스, 제품 생산 등 아이디어를 실제 비즈니스와 매출로 연결합니다.</p>
+          </div>
+          <div class="card">
+            <div class="card-no">04</div>
+            <h3>문화예술 확장</h3>
+            <p>AI 아트 전시, 한지 작품, 참여형 전시 콘텐츠를 통해 디지털과 예술의 접점을 넓혀갑니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="story" class="light">
+      <div class="container two-col">
+        <div>
+          <p class="section-label">BRAND STORY</p>
+          <h2>기록하고,<br>만들고,<br>계속 확장합니다.</h2>
+          <p>
+            DM COMPANY의 콘텐츠는 단순한 홍보물이 아닙니다. 실패와 도전, 성장의 경험을
+            진짜 이야기로 축적하고 확장합니다.
+          </p>
+        </div>
+        <div>
+          <div>
+            <p class="section-label">CREATOR</p>
+            <p>
+              『나처럼 살아도 괜찮아』 저자, 10년간 디지털로 먹고 산 사람,
+              브랜딩 크리에이터로서 지속 가능한 콘텐츠 생태계를 만들어갑니다.
+            </p>
+          </div>
+          <div class="split-top">
+            <p class="section-label">PHILOSOPHY</p>
+            <p>
+              좋은 콘텐츠는 꾸준함에서 나오고, 좋은 브랜드는 실제 경험에서 나옵니다.
+              우리는 직접 살아낸 이야기를 브랜드의 힘으로 바꿉니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="leadership">
+      <div class="container">
+        <p class="section-label">LEADERSHIP</p>
+        <h2>함께 움직이는 사람들</h2>
+        <div class="leaders">
+          <div class="leader">
+            <p>CEO</p>
+            <h3>김현수</h3>
+            <p>디지털 비즈니스 전략 및 실행 총괄</p>
+          </div>
+          <div class="leader">
+            <p>COO</p>
+            <h3>예아라</h3>
+            <p>콘텐츠, 교육, 브랜딩 운영 총괄</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="light">
+      <div class="container">
+        <p class="section-label">CONTACT</p>
+        <h2>프로젝트 문의</h2>
+        <p>교육, 브랜딩, 콘텐츠, 비즈니스 협업 문의를 환영합니다.</p>
+        <p><strong>arago9393@gmail.com</strong></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>CEO 김현수 · COO 예아라</p>
+    <p>© 2026 DM COMPANY</p>
+  </footer>
+</body>
+</html>
