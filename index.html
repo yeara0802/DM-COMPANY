@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DM COMPANY</title>
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #000;
+      color: #fff;
+      line-height: 1.7;
+    }
+    a { text-decoration: none; color: inherit; }
+    img { display: block; max-width: 100%; }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      background: #000;
+      padding: 16px 20px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .brand img { height: 40px; width: auto; }
+    nav { display: none; }
+    nav a {
+      margin-left: 20px;
+      color: #aaa;
+    }
+    nav a:hover { color: #fff; }
+    section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 80px 20px;
+    }
+    .white {
+      background: #fff;
+      color: #000;
+      max-width: none;
+    }
+    .white .inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .btn {
+      display: inline-block;
+      margin-bottom: 30px;
+      padding: 12px 24px;
+      border: 1px solid #fff;
+      border-radius: 999px;
+      color: #fff;
+    }
+    .btn:hover {
+      background: #fff;
+      color: #000;
+    }
+    h1 {
+      font-size: 48px;
+      line-height: 1.3;
+      margin: 0;
+    }
+    h2 {
+      font-size: 36px;
+      margin: 0 0 16px 0;
+    }
+    h3 {
+      font-size: 24px;
+      margin: 0 0 12px 0;
+    }
+    p { line-height: 1.8; }
+    .muted { color: #aaa; }
+    .grid {
+      display: grid;
+      gap: 20px;
+    }
+    .card {
+      border: 1px solid rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 16px;
+    }
+    .white .card {
+      border: 1px solid rgba(0,0,0,0.1);
+    }
+    footer {
+      padding: 40px 20px;
+      text-align: center;
+      color: #777;
+    }
+    @media (min-width: 768px) {
+      nav { display: block; }
+      .grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <img src="dm_logo.png" alt="DM COMPANY logo" />
+    <div>DM COMPANY</div>
+  </div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#story">Story</a>
+    <a href="#leadership">Leadership</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section>
+  <a
+    href="http://link.inpock.co.kr/ye__ara"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="btn"
+  >
+    예아라 홈페이지 바로가기
+  </a>
+
+  <h1>
+    하나의 정답을 따르지 않는<br />
+    새로운 방식을 만드는 회사
+  </h1>
+
+  <p class="muted" style="margin-top:20px;">
+    DM COMPANY는 교육, 콘텐츠, 비즈니스를 넘나들며 새로운 가능성을 실험합니다.
+    빠르게 배우고, 바로 실행하며, 결과로 증명합니다.
+  </p>
+</section>
+
+<section id="about" class="white">
+  <div class="inner">
+    <h2>About</h2>
+    <p>
+      DM COMPANY는 하나의 분야에 머무르지 않습니다.
+      교육하고, 만들고, 브랜딩하고, 실행하며 새로운 기회를 설계합니다.
+    </p>
+  </div>
+</section>
+
+<section id="services">
+  <h2>Services</h2>
+  <div class="grid">
+    <div class="card">실무 중심 디지털 교육</div>
+    <div class="card">브랜딩 콘텐츠 생산</div>
+    <div class="card">비즈니스 실행</div>
+    <div class="card">문화예술 확장</div>
+  </div>
+</section>
+
+<section id="story" class="white">
+  <div class="inner">
+    <h2>Story</h2>
+    <p>실패와 경험, 성장의 이야기를 콘텐츠로 만들고 확장합니다.</p>
+  </div>
+</section>
+
+<section id="leadership">
+  <h2>Leadership</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>CEO 김현수</h3>
+      <p>디지털 비즈니스 전략 및 실행 총괄</p>
+    </div>
+    <div class="card">
+      <h3>COO 예아라</h3>
+      <p>콘텐츠, 교육, 브랜딩 운영 총괄</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="white">
+  <div class="inner">
+    <h2>Contact</h2>
+    <p>arago9393@gmail.com</p>
+  </div>
+</section>
+
+<footer>
+  © 2026 DM COMPANY
+</footer>
+
+</body>
+</html>
